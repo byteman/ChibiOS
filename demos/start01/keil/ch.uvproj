@@ -991,6 +991,11 @@
               <FileType>1</FileType>
               <FilePath>..\web\web.c</FilePath>
             </File>
+            <File>
+              <FileName>fm25l16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\fm25l16.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

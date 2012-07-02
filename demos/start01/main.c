@@ -25,7 +25,7 @@
 #include "lwipthread.h"
 
 #include "web/web.h"
-
+#include "fm25l16.h"
 /*
  * Green LED blinker thread, times are in milliseconds.
  */
@@ -39,6 +39,9 @@ static msg_t Thread1(void *arg) {
     chThdSleepMilliseconds(500);
     palSetPad(GPIOE, GPIOE_LED_STATUS1);
     chThdSleepMilliseconds(500);
+
+	fm25l16_write_byte(1,1);
+	fm25l16_read_byte(1);
   }
 }
 
