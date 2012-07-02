@@ -1,4 +1,4 @@
-Status:
+Status: 
 - = Planned.
 X = In progress, some work done.
 * = Done.
