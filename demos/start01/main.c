@@ -35,9 +35,9 @@ static msg_t Thread1(void *arg) {
   (void)arg;
   chRegSetThreadName("blinker");
   while (TRUE) {
-    palClearPad(GPIOC, GPIOC_LED_STATUS1);
+    palClearPad(GPIOE, GPIOE_LED_STATUS1);
     chThdSleepMilliseconds(500);
-    palSetPad(GPIOC, GPIOC_LED_STATUS1);
+    palSetPad(GPIOE, GPIOE_LED_STATUS1);
     chThdSleepMilliseconds(500);
   }
 }
@@ -60,7 +60,7 @@ int main(void) {
   /*
    * Activates the serial driver 3 using the driver default configuration.
    */
-  sdStart(&SD3, NULL);
+  sdStart(&SD1, NULL);
 
   /*
    * Creates the blinker thread.
@@ -84,8 +84,8 @@ int main(void) {
    * sleeping in a loop and check the button state.
    */
   while (TRUE) {
-    if (palReadPad(GPIOC, GPIOC_SWITCH_TAMPER) == 0)
-      TestThread(&SD3);
+    if (palReadPad(GPIOE, GPIOE_SWITCH_TAMPER) == 0)
+      TestThread(&SD1);
     chThdSleepMilliseconds(500);
   }
 }
