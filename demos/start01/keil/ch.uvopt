@@ -151,7 +151,7 @@
 
   <Group>
     <GroupName>board</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
@@ -174,10 +174,10 @@
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>37</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>151</TopLine>
+      <CurrentLine>168</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\boards\DT_STM32_P107\board.h</PathWithFileName>
       <FilenameWithoutPath>board.h</FilenameWithoutPath>
@@ -2052,7 +2052,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>18</TopLine>
+      <TopLine>23</TopLine>
       <CurrentLine>35</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\web\web.c</PathWithFileName>
@@ -2578,7 +2578,7 @@
       <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>192</TopLine>
-      <CurrentLine>202</CurrentLine>
+      <CurrentLine>198</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\various\lwip_bindings\arch\sys_arch.c</PathWithFileName>
       <FilenameWithoutPath>sys_arch.c</FilenameWithoutPath>
@@ -2586,7 +2586,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\Administrator\ChibiOS\demos\start01\halconf.h</PathWithFilename>
+    <PathWithFilename>F:\funny\ChibiOS-byteman\demos\start01\halconf.h</PathWithFilename>
     <TopLine>41</TopLine>
     <CurrentLine>41</CurrentLine>
     <Constant>0</Constant>
@@ -2616,19 +2616,19 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>9</ActiveTab>
+      <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
           <Name>..\web\web.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>18</TopLine>
+          <TopLine>23</TopLine>
           <CurrentLine>35</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\..\..\boards\DT_STM32_P107\board.h</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>35</ColumnNumber>
+          <TopLine>157</TopLine>
+          <CurrentLine>175</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\..\..\boards\DT_STM32_P107\board.c</Name>
@@ -2657,7 +2657,7 @@
         <Doc>
           <Name>..\..\..\boards\OLIMEX_STM32_P107\board.h</Name>
           <ColumnNumber>56</ColumnNumber>
-          <TopLine>74</TopLine>
+          <TopLine>78</TopLine>
           <CurrentLine>90</CurrentLine>
         </Doc>
         <Doc>
@@ -2667,46 +2667,10 @@
           <CurrentLine>140</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\..\os\hal\include\gpt.h</Name>
-          <ColumnNumber>28</ColumnNumber>
-          <TopLine>66</TopLine>
-          <CurrentLine>66</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\..\os\various\lwip_bindings\arch\sys_arch.c</Name>
-          <ColumnNumber>5</ColumnNumber>
-          <TopLine>192</TopLine>
-          <CurrentLine>198</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\..\os\ports\RVCT\ARMCMx\chtypes.h</Name>
-          <ColumnNumber>24</ColumnNumber>
-          <TopLine>42</TopLine>
-          <CurrentLine>48</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\..\os\kernel\include\chvt.h</Name>
-          <ColumnNumber>8</ColumnNumber>
-          <TopLine>206</TopLine>
-          <CurrentLine>206</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\..\os\hal\src\mac.c</Name>
-          <ColumnNumber>4</ColumnNumber>
-          <TopLine>206</TopLine>
-          <CurrentLine>217</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\halconf.h</Name>
-          <ColumnNumber>8</ColumnNumber>
-          <TopLine>41</TopLine>
-          <CurrentLine>41</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\..\os\hal\src\hal.c</Name>
-          <ColumnNumber>8</ColumnNumber>
-          <TopLine>56</TopLine>
-          <CurrentLine>66</CurrentLine>
+          <Name>..\..\..\os\kernel\src\chvt.c</Name>
+          <ColumnNumber>29</ColumnNumber>
+          <TopLine>116</TopLine>
+          <CurrentLine>116</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\main.c</Name>
@@ -2715,10 +2679,46 @@
           <CurrentLine>61</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\..\os\kernel\src\chvt.c</Name>
-          <ColumnNumber>29</ColumnNumber>
-          <TopLine>116</TopLine>
-          <CurrentLine>116</CurrentLine>
+          <Name>..\..\..\os\hal\src\hal.c</Name>
+          <ColumnNumber>8</ColumnNumber>
+          <TopLine>56</TopLine>
+          <CurrentLine>66</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\halconf.h</Name>
+          <ColumnNumber>8</ColumnNumber>
+          <TopLine>41</TopLine>
+          <CurrentLine>41</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\hal\src\mac.c</Name>
+          <ColumnNumber>4</ColumnNumber>
+          <TopLine>206</TopLine>
+          <CurrentLine>217</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\kernel\include\chvt.h</Name>
+          <ColumnNumber>8</ColumnNumber>
+          <TopLine>206</TopLine>
+          <CurrentLine>206</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\ports\RVCT\ARMCMx\chtypes.h</Name>
+          <ColumnNumber>24</ColumnNumber>
+          <TopLine>42</TopLine>
+          <CurrentLine>48</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\various\lwip_bindings\arch\sys_arch.c</Name>
+          <ColumnNumber>5</ColumnNumber>
+          <TopLine>192</TopLine>
+          <CurrentLine>198</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\hal\include\gpt.h</Name>
+          <ColumnNumber>28</ColumnNumber>
+          <TopLine>66</TopLine>
+          <CurrentLine>66</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
