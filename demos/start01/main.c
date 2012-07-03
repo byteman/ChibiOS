@@ -26,14 +26,26 @@
 
 #include "web/web.h"
 #include "fm25l16.h"
+#include "datetime.h"
+#include "chprintf.h"
 /*
  * Green LED blinker thread, times are in milliseconds.
  */
 static WORKING_AREA(waThread1, 128);
+uint8_t byte_01;
+TDateTime dt;
+static BaseSequentialStream *chp;
 static msg_t Thread1(void *arg) {
 
   (void)arg;
   chRegSetThreadName("blinker");
+  dt.year = 2012;
+  dt.mon = 7;
+  dt.day = 3;
+  dt.hour= 16;
+  dt.min = 9;
+  dt.sec = 12;
+  set_datetime(&dt);
   while (TRUE) {
     palClearPad(GPIOE, GPIOE_LED_STATUS1);
     chThdSleepMilliseconds(500);
@@ -41,7 +53,13 @@ static msg_t Thread1(void *arg) {
     chThdSleepMilliseconds(500);
 
 	fm25l16_write_byte(1,1);
-	fm25l16_read_byte(1);
+	byte_01 = fm25l16_read_byte(1);
+
+	get_datetime(&dt);
+
+    chprintf(chp,"%d/%d/%d %d:%d:%d\r\n",dt.year,dt.mon,dt.day,dt.hour,dt.min,dt.sec);
+
+
   }
 }
 #define IP_ADDR(ip,a,b,c,d) \
@@ -55,6 +73,8 @@ struct lwipthread_opts net_opts;
 /*
  * Application entry point.
  */
+extern int stm32_rtc_init();
+
 int main(void) {
 
   /*
@@ -66,12 +86,13 @@ int main(void) {
    */
   halInit();
   chSysInit();
+  stm32_rtc_init();
 
   /*
    * Activates the serial driver 3 using the driver default configuration.
    */
   sdStart(&SD1, NULL);
-
+  chp = (BaseSequentialStream *)&SD1;
   /*
    * Creates the blinker thread.
    */

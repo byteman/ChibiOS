@@ -996,6 +996,16 @@
               <FileType>1</FileType>
               <FilePath>..\fm25l16.c</FilePath>
             </File>
+            <File>
+              <FileName>pcf8563.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\pcf8563.c</FilePath>
+            </File>
+            <File>
+              <FileName>datetime.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\datetime.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

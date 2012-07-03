@@ -39,8 +39,8 @@
 
 #if (defined(STM32F4XX) || defined(STM32F2XX) || defined(STM32L1XX) || \
      defined(STM32F1XX) || defined(STM32F10X_MD) || defined(STM32F10X_LD) || \
-     defined(STM32F10X_HD) || defined(__DOXYGEN__))
-#if STM32_RTC_IS_CALENDAR
+     defined(STM32F10X_HD) || defined(STM32F10X_CL) || defined(__DOXYGEN__))
+#if STM32_RTC_IS_CALENDAR	   
 /**
  * @brief   Converts from STM32 BCD to canonicalized time format.
  *
@@ -52,7 +52,7 @@
 static void stm32_rtc_bcd2tm(struct tm *timp, RTCTime *timespec) {
   uint32_t tv_time = timespec->tv_time;
   uint32_t tv_date = timespec->tv_date;
-
+	  
 #if CH_DBG_ENABLE_CHECKS
   timp->tm_isdst = 0;
   timp->tm_wday  = 0;
@@ -253,7 +253,7 @@ uint64_t rtcGetTimeUnixUsec(RTCDriver *rtcp) {
  */
 void rtcGetTimeTm(RTCDriver *rtcp, struct tm *timp) {
   RTCTime timespec = {0,0};
-
+		  
   rtcGetTime(rtcp, &timespec);
   if (timp != NULL) /* this comparison needed to avoid compiler warning */
     timp = localtime((time_t *)&(timespec.tv_sec));

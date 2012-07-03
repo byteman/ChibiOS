@@ -47,7 +47,14 @@ typedef int32_t         eventid_t;      /**< Event Id.                      */
 typedef uint32_t        eventmask_t;    /**< Events mask.                   */
 typedef uint32_t        systime_t;      /**< System time.                   */
 typedef int32_t         cnt_t;          /**< Resources counter.             */
-
+//add by byteman
+typedef uint8_t			u8;		
+typedef uint16_t		u16;			
+typedef uint32_t		u32;			
+typedef int8_t			s8;			
+typedef int16_t			s16;			
+typedef int32_t			s32;			
+	
 /**
  * @brief   Inline function modifier.
  */
