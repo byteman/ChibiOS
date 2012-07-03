@@ -44,6 +44,13 @@ static msg_t Thread1(void *arg) {
 	fm25l16_read_byte(1);
   }
 }
+#define IP_ADDR(ip,a,b,c,d) \
+						 ip=((uint32_t)((d) & 0xff) << 24) | \
+                         ((uint32_t)((c) & 0xff) << 16) | \
+                         ((uint32_t)((b) & 0xff) << 8)  | \
+                          (uint32_t)((a) & 0xff)
+uint8_t mac_addr[6] = {0x0,0x11,0x22,0x33,0x44,0x55};
+struct lwipthread_opts net_opts;
 
 /*
  * Application entry point.
@@ -73,8 +80,14 @@ int main(void) {
   /*
    * Creates the LWIP threads (it changes priority internally).
    */
+  net_opts.macaddress = mac_addr;
+
+  IP_ADDR(net_opts.address,192,168,50,222);
+  IP_ADDR(net_opts.netmask,255,255,255,0);
+  IP_ADDR(net_opts.gateway,192,168,50,1);
+
   chThdCreateStatic(wa_lwip_thread, LWIP_THREAD_STACK_SIZE, NORMALPRIO + 1,
-                    lwip_thread, NULL);
+                    lwip_thread, &net_opts);
 
   /*
    * Creates the HTTP thread (it changes priority internally).

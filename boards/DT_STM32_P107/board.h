@@ -45,7 +45,7 @@
 /*
  * Ethernet PHY type.
  */
-#define BOARD_PHY_ID            MII_DM9161B_ID
+#define BOARD_PHY_ID            MII_DM9161_ID
 #define BOARD_PHY_RMII
 
 /*

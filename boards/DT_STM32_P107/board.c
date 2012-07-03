@@ -82,7 +82,5 @@ void boardInit(void) {
    *   I2C1 to the PB8/PB9 pins.
    *   SPI3 to the PC10/PC11/PC12 pins.
    */
-  AFIO->MAPR |= AFIO_MAPR_USART3_REMAP_FULLREMAP |
-                AFIO_MAPR_I2C1_REMAP |
-                AFIO_MAPR_SPI3_REMAP;
+  AFIO->MAPR |= AFIO_MAPR_ETH_REMAP;
 }

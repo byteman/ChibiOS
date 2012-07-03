@@ -119,9 +119,10 @@ static uint32_t mii_read(MACDriver *macp, uint32_t reg) {
  *
  * @param[in] macp      pointer to the @p MACDriver object
  */
+uint32_t phy_id1 = 0,phy_id2=0;
 static void mii_find_phy(MACDriver *macp) {
   uint32_t i;
-
+  
 #if STM32_MAC_PHY_TIMEOUT > 0
   halrtcnt_t start = halGetCounterValue();
   halrtcnt_t timeout  = start + MS2RTT(STM32_MAC_PHY_TIMEOUT);
@@ -130,8 +131,10 @@ static void mii_find_phy(MACDriver *macp) {
     for (i = 0; i < 31; i++) {
       macp->phyaddr = i << 11;
       ETH->MACMIIDR = (i << 6) | MACMIIDR_CR;
-      if ((mii_read(macp, MII_PHYSID1) == (BOARD_PHY_ID >> 16)) &&
-          ((mii_read(macp, MII_PHYSID2) & 0xFFF0) == (BOARD_PHY_ID & 0xFFF0))) {
+	  phy_id1 = mii_read(macp, MII_PHYSID1);
+	  phy_id2 = mii_read(macp, MII_PHYSID2);
+      if ((phy_id1 == (BOARD_PHY_ID >> 16)) &&
+          (phy_id2 & 0xFFF0) == (BOARD_PHY_ID & 0xFFF0)) {
         return;
       }
     }

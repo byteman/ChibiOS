@@ -118,15 +118,99 @@
         <tIfile></tIfile>
         <pMon>Segger\JL2CM3.dll</pMon>
       </DebugOpt>
+      <TargetDriverDllRegistry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>DLGTARM</Key>
+          <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>ARMDBGFLAGS</Key>
+          <Name></Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>DLGUARM</Key>
+          <Name>(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>JL2CM3</Key>
+          <Name>-U805306163 -O14 -S0 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight JTAG-DP") -D00(3BA00477) -L00(4) -N01("Unknown JTAG device") -D01(06418041) -L01(5) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD20000000 -FC800 -FN1 -FF0STM32F10x_CL -FS08000000 -FL040000</Name>
+        </SetRegEntry>
+      </TargetDriverDllRegistry>
+      <Breakpoint>
+        <Bp>
+          <Number>0</Number>
+          <Type>0</Type>
+          <LineNumber>60</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134244954</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename></Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ch\main\60</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>134</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134228620</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename></Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ch\mac_lld\134</Expression>
+        </Bp>
+        <Bp>
+          <Number>2</Number>
+          <Type>0</Type>
+          <LineNumber>136</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134228632</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename></Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ch\mac_lld\136</Expression>
+        </Bp>
+        <Bp>
+          <Number>3</Number>
+          <Type>0</Type>
+          <LineNumber>138</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134228724</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename></Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ch\mac_lld\138</Expression>
+        </Bp>
+      </Breakpoint>
       <DebugFlag>
         <trace>0</trace>
         <periodic>0</periodic>
-        <aLwin>0</aLwin>
+        <aLwin>1</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
         <aPa>0</aPa>
-        <viewmode>0</viewmode>
+        <viewmode>1</viewmode>
         <vrSel>0</vrSel>
         <aSym>0</aSym>
         <aTbox>0</aTbox>
@@ -151,7 +235,7 @@
 
   <Group>
     <GroupName>board</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
@@ -160,10 +244,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>28</ColumnNumber>
+      <ColumnNumber>50</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>7</TopLine>
-      <CurrentLine>15</CurrentLine>
+      <TopLine>63</TopLine>
+      <CurrentLine>83</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\boards\DT_STM32_P107\board.c</PathWithFileName>
       <FilenameWithoutPath>board.c</FilenameWithoutPath>
@@ -174,10 +258,10 @@
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>49</ColumnNumber>
+      <ColumnNumber>44</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>22</TopLine>
-      <CurrentLine>39</CurrentLine>
+      <TopLine>66</TopLine>
+      <CurrentLine>89</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\boards\DT_STM32_P107\board.h</PathWithFileName>
       <FilenameWithoutPath>board.h</FilenameWithoutPath>
@@ -197,8 +281,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>66</TopLine>
+      <CurrentLine>71</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\ports\RVCT\ARMCMx\cstartup.s</PathWithFileName>
       <FilenameWithoutPath>cstartup.s</FilenameWithoutPath>
@@ -225,8 +309,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>37</TopLine>
+      <CurrentLine>42</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\ports\RVCT\ARMCMx\chcore.c</PathWithFileName>
       <FilenameWithoutPath>chcore.c</FilenameWithoutPath>
@@ -951,10 +1035,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>14</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>61</TopLine>
-      <CurrentLine>65</CurrentLine>
+      <TopLine>163</TopLine>
+      <CurrentLine>172</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\hal\src\hal.c</PathWithFileName>
       <FilenameWithoutPath>hal.c</FilenameWithoutPath>
@@ -967,8 +1051,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>62</TopLine>
+      <CurrentLine>67</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\hal\src\mac.c</PathWithFileName>
       <FilenameWithoutPath>mac.c</FilenameWithoutPath>
@@ -1049,10 +1133,10 @@
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>22</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>49</TopLine>
+      <CurrentLine>49</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\hal\include\hal.h</PathWithFileName>
       <FilenameWithoutPath>hal.h</FilenameWithoutPath>
@@ -1077,10 +1161,10 @@
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>18</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>144</TopLine>
+      <CurrentLine>154</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\hal\include\mii.h</PathWithFileName>
       <FilenameWithoutPath>mii.h</FilenameWithoutPath>
@@ -1268,8 +1352,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>109</TopLine>
+      <CurrentLine>114</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\hal\platforms\STM32\GPIOv1\pal_lld.c</PathWithFileName>
       <FilenameWithoutPath>pal_lld.c</FilenameWithoutPath>
@@ -1296,8 +1380,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>218</TopLine>
+      <CurrentLine>224</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\hal\platforms\STM32F1xx\hal_lld.c</PathWithFileName>
       <FilenameWithoutPath>hal_lld.c</FilenameWithoutPath>
@@ -1406,10 +1490,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>35</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>126</TopLine>
+      <CurrentLine>136</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\os\hal\platforms\STM32\mac_lld.c</PathWithFileName>
       <FilenameWithoutPath>mac_lld.c</FilenameWithoutPath>
@@ -1784,10 +1868,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>20</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>28</TopLine>
-      <CurrentLine>28</CurrentLine>
+      <TopLine>49</TopLine>
+      <CurrentLine>60</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -1808,14 +1892,14 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>116</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>25</ColumnNumber>
+      <ColumnNumber>35</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>47</TopLine>
-      <CurrentLine>60</CurrentLine>
+      <CurrentLine>67</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\fm25l16.c</PathWithFileName>
       <FilenameWithoutPath>fm25l16.c</FilenameWithoutPath>
@@ -1829,7 +1913,7 @@
     <cbSel>0</cbSel>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>116</FileNumber>
+      <FileNumber>117</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1843,7 +1927,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>117</FileNumber>
+      <FileNumber>118</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1857,7 +1941,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>118</FileNumber>
+      <FileNumber>119</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1871,7 +1955,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>119</FileNumber>
+      <FileNumber>120</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1885,7 +1969,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>120</FileNumber>
+      <FileNumber>121</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1899,7 +1983,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>121</FileNumber>
+      <FileNumber>122</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1913,7 +1997,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>122</FileNumber>
+      <FileNumber>123</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1927,7 +2011,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>123</FileNumber>
+      <FileNumber>124</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1941,7 +2025,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>124</FileNumber>
+      <FileNumber>125</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1955,7 +2039,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>125</FileNumber>
+      <FileNumber>126</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1969,7 +2053,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>126</FileNumber>
+      <FileNumber>127</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1983,7 +2067,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>127</FileNumber>
+      <FileNumber>128</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1997,7 +2081,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>128</FileNumber>
+      <FileNumber>129</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2011,7 +2095,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>129</FileNumber>
+      <FileNumber>130</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2025,7 +2109,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>130</FileNumber>
+      <FileNumber>131</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2039,7 +2123,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>131</FileNumber>
+      <FileNumber>132</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2053,7 +2137,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>132</FileNumber>
+      <FileNumber>133</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2067,7 +2151,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>133</FileNumber>
+      <FileNumber>134</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2081,7 +2165,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>134</FileNumber>
+      <FileNumber>135</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2095,7 +2179,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>135</FileNumber>
+      <FileNumber>136</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2109,7 +2193,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>136</FileNumber>
+      <FileNumber>137</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2123,7 +2207,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>137</FileNumber>
+      <FileNumber>138</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2137,7 +2221,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>138</FileNumber>
+      <FileNumber>139</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2151,7 +2235,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>139</FileNumber>
+      <FileNumber>140</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2165,7 +2249,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>140</FileNumber>
+      <FileNumber>141</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2179,7 +2263,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>141</FileNumber>
+      <FileNumber>142</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2193,7 +2277,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>142</FileNumber>
+      <FileNumber>143</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2207,7 +2291,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>143</FileNumber>
+      <FileNumber>144</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2221,7 +2305,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>144</FileNumber>
+      <FileNumber>145</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2235,7 +2319,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>145</FileNumber>
+      <FileNumber>146</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2249,7 +2333,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>146</FileNumber>
+      <FileNumber>147</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2263,7 +2347,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>147</FileNumber>
+      <FileNumber>148</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2277,7 +2361,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>148</FileNumber>
+      <FileNumber>149</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2291,7 +2375,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>149</FileNumber>
+      <FileNumber>150</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2305,7 +2389,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>150</FileNumber>
+      <FileNumber>151</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2319,7 +2403,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>151</FileNumber>
+      <FileNumber>152</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2333,7 +2417,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>152</FileNumber>
+      <FileNumber>153</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -2348,7 +2432,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\funny\ChibiOS-byteman\demos\start01\halconf.h</PathWithFilename>
+    <PathWithFilename>D:\proj\chibios-byteman\demos\start01\halconf.h</PathWithFilename>
     <TopLine>36</TopLine>
     <CurrentLine>48</CurrentLine>
     <Constant>0</Constant>
@@ -2374,7 +2458,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\funny\ChibiOS-byteman\demos\start01\mcuconf.h</PathWithFilename>
+    <PathWithFilename>D:\proj\chibios-byteman\demos\start01\mcuconf.h</PathWithFilename>
     <TopLine>196</TopLine>
     <CurrentLine>208</CurrentLine>
     <Constant>0</Constant>
@@ -2404,67 +2488,85 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>4</ActiveTab>
+      <ActiveTab>3</ActiveTab>
       <Documents>
         <Doc>
-          <Name>..\fm25l16.c</Name>
-          <ColumnNumber>25</ColumnNumber>
-          <TopLine>47</TopLine>
-          <CurrentLine>60</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\web\web.c</Name>
-          <ColumnNumber>6</ColumnNumber>
-          <TopLine>97</TopLine>
-          <CurrentLine>97</CurrentLine>
-        </Doc>
-        <Doc>
           <Name>..\..\..\os\hal\include\mii.h</Name>
-          <ColumnNumber>18</ColumnNumber>
+          <ColumnNumber>21</ColumnNumber>
           <TopLine>144</TopLine>
-          <CurrentLine>154</CurrentLine>
+          <CurrentLine>153</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\..\os\various\lwip_bindings\lwipthread.c</Name>
-          <ColumnNumber>6</ColumnNumber>
-          <TopLine>218</TopLine>
-          <CurrentLine>218</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\main.c</Name>
-          <ColumnNumber>20</ColumnNumber>
-          <TopLine>28</TopLine>
-          <CurrentLine>28</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\..\boards\DT_STM32_P107\board.h</Name>
-          <ColumnNumber>49</ColumnNumber>
-          <TopLine>27</TopLine>
-          <CurrentLine>39</CurrentLine>
+          <Name>..\..\..\os\hal\src\hal.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>163</TopLine>
+          <CurrentLine>172</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\..\..\boards\DT_STM32_P107\board.c</Name>
-          <ColumnNumber>28</ColumnNumber>
-          <TopLine>7</TopLine>
-          <CurrentLine>15</CurrentLine>
+          <ColumnNumber>50</ColumnNumber>
+          <TopLine>63</TopLine>
+          <CurrentLine>83</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\..\os\hal\include\hal.h</Name>
-          <ColumnNumber>22</ColumnNumber>
+          <Name>..\..\..\boards\DT_STM32_P107\board.h</Name>
+          <ColumnNumber>42</ColumnNumber>
+          <TopLine>42</TopLine>
+          <CurrentLine>48</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\ports\RVCT\ARMCMx\chcore.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>37</TopLine>
+          <CurrentLine>42</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\hal\platforms\STM32\mac_lld.c</Name>
+          <ColumnNumber>35</ColumnNumber>
+          <TopLine>126</TopLine>
+          <CurrentLine>136</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\hal\src\mac.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>62</TopLine>
+          <CurrentLine>67</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\hal\platforms\STM32\GPIOv1\pal_lld.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>109</TopLine>
+          <CurrentLine>114</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\main.c</Name>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>49</TopLine>
-          <CurrentLine>49</CurrentLine>
+          <CurrentLine>60</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\..\os\hal\src\serial.c</Name>
-          <ColumnNumber>14</ColumnNumber>
-          <TopLine>154</TopLine>
-          <CurrentLine>166</CurrentLine>
+          <Name>..\..\..\os\hal\platforms\STM32F1xx\hal_lld.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>218</TopLine>
+          <CurrentLine>224</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\..\os\hal\platforms\STM32\serial_lld.c</Name>
-          <ColumnNumber>27</ColumnNumber>
-          <TopLine>540</TopLine>
-          <CurrentLine>546</CurrentLine>
+          <Name>..\..\..\os\ports\RVCT\ARMCMx\cstartup.s</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>66</TopLine>
+          <CurrentLine>71</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\fm25l16.c</Name>
+          <ColumnNumber>35</ColumnNumber>
+          <TopLine>47</TopLine>
+          <CurrentLine>67</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\halconf.h</Name>
+          <ColumnNumber>32</ColumnNumber>
+          <TopLine>36</TopLine>
+          <CurrentLine>48</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\mcuconf.h</Name>
@@ -2473,16 +2575,34 @@
           <CurrentLine>208</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\..\os\hal\src\hal.c</Name>
-          <ColumnNumber>14</ColumnNumber>
-          <TopLine>61</TopLine>
-          <CurrentLine>65</CurrentLine>
+          <Name>..\..\..\os\hal\platforms\STM32\serial_lld.c</Name>
+          <ColumnNumber>27</ColumnNumber>
+          <TopLine>540</TopLine>
+          <CurrentLine>546</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\halconf.h</Name>
-          <ColumnNumber>32</ColumnNumber>
-          <TopLine>36</TopLine>
-          <CurrentLine>48</CurrentLine>
+          <Name>..\..\..\os\hal\src\serial.c</Name>
+          <ColumnNumber>14</ColumnNumber>
+          <TopLine>154</TopLine>
+          <CurrentLine>166</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\hal\include\hal.h</Name>
+          <ColumnNumber>22</ColumnNumber>
+          <TopLine>49</TopLine>
+          <CurrentLine>49</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\..\os\various\lwip_bindings\lwipthread.c</Name>
+          <ColumnNumber>6</ColumnNumber>
+          <TopLine>218</TopLine>
+          <CurrentLine>218</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\web\web.c</Name>
+          <ColumnNumber>6</ColumnNumber>
+          <TopLine>97</TopLine>
+          <CurrentLine>97</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
