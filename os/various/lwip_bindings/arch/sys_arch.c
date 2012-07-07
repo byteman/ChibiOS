@@ -193,10 +193,11 @@ void sys_mbox_set_invalid(sys_mbox_t *mbox) {
 
 sys_thread_t sys_thread_new(const char *name, lwip_thread_fn thread,
                             void *arg, int stacksize, int prio) {
-
+  size_t wsz = 0;
+  void *wsp  = 0;
   (void)name;
-  size_t wsz = THD_WA_SIZE(stacksize);
-  void *wsp = chCoreAlloc(wsz);
+  wsz = THD_WA_SIZE(stacksize);
+  wsp = chCoreAlloc(wsz);
   if (wsp == NULL)
     return NULL;
   return (sys_thread_t)chThdCreateStatic(wsp, wsz, prio, (tfunc_t)thread, arg);

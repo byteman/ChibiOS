@@ -189,9 +189,11 @@ void rtc_lld_set_time(RTCDriver *rtcp, const RTCTime *timespec) {
  * @notapi
  */
 void rtc_lld_get_time(RTCDriver *rtcp, RTCTime *timespec) {
-  (void)rtcp;
 
   uint32_t time_frac;
+  (void)rtcp;
+
+  
 
   /* Required because access to CNT and DIV.*/
   rtc_lld_apb1_sync();
